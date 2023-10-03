@@ -1,0 +1,131 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
+}
+.vertical-line{
+    border-left: 2px solid #f2f2f2; 
+    height:60px;
+}
+.delivery>h5{
+    font-weight: 900;
+    margin-top:10px;
+}
+.delivery>p{
+    font-size: 13px;
+}
+.search-box{
+    width:500px;
+    background-color:#f8f8f8;
+    padding-inline: 10px;
+    border-radius: 10px;
+    height:60px;
+}
+.search-box>input{
+    border:none;
+    height:50px;
+    width:40vw;
+    background-color: transparent;
+}
+.login{
+ border:none;
+ font-size: large;
+}
+.my-cart{
+    height:70px;
+    border-radius: 10px;
+}
+.scroll-container{
+    width:85vw;
+    margin:auto;
+    
+}
+.list{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.list>img{
+    padding-inline: 10px;
+}
+.list::-webkit-scrollbar{
+    display: none;
+}
+#categories-1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 6.5vw;
+    justify-content: space-around;
+}
+.categories-2{
+    width:85vw;
+    margin:auto;
+}
+.my-card{
+    width:200px;
+    display:inline-block !important;
+    margin-inline:10px;
+    box-sizing: border-box;
+    white-space: wrap;
+    border-radius:15px !important;
+}
+
+.time{
+    background-color: #f2f2f2;
+    font-weight:700;
+    font-size:9px;
+    color:rgb(54,54,54);
+    width:fit-content;
+    padding:5px;
+    border-radius:5px;
+}
+.product__weight{
+    font-size:13px;
+    color:#666666;
+}
+.tag{
+    position: absolute;
+    top:0px;
+    height: 40px;
+    left: 20px;
+    width: 35px;
+    text-align:center;
+    color:white;
+    font-weight: 900;
+    font-size: 13px;
+    background-color: #528cee;
+}
+.zig-zag{
+position: relative;
+color: #528cee;
+bottom: 8px;
+}
+.footer{
+    padding-top: 50px;
+    padding-left: 650px;
+    padding-bottom: 100px;
+}
+@media screen and (max-width:480px){
+    .hero-section{
+        display: none !important;
+    }
+    nav{
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: auto;
+        position:static;
+    }
+    .vertical-line{
+        display: none;
+    }
+
+    .footer{
+        padding: 20px;
+        padding-left: 120px;
+    }
+    .search-box{
+        width:90vw;
+    }
+}
